@@ -2,34 +2,41 @@
 //  ViewController2.m
 //  AnimationTest
 //
-//  Created by zhongding on 2018/9/6.
+//  Created by zhongding on 2018/9/7.
 //
 
 #import "ViewController2.h"
+#import "MenuView.h"
 
 @interface ViewController2 ()
+@property(strong ,nonatomic) MenuView *menuView;
 
 @end
 
 @implementation ViewController2
-#pragma mark ***************** 页面名称
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+
     
-    [self _initUI];
+    _menuView = [[MenuView alloc] initWithFrame:[UIScreen mainScreen].bounds];
 }
-
-#pragma mark ***************** lift cycle
-
-
-#pragma mark ***************** ui
-- (void)_initUI{
-
+- (IBAction)back:(id)sender {
+    CATransition *anim = [CATransition animation];
+    //    anim.type = @"suckEffect";
+    anim.type = @"pageUnCurl";
+    //    anim.subtype = kCATransitionFromBottom;
+    anim.duration = 1;
+    [self.navigationController.view.layer  addAnimation:anim forKey:nil];
+    
+    [self.navigationController popViewControllerAnimated:NO];
 }
-
-#pragma mark ***************** lazy load 
-
-
+- (IBAction)menu:(id)sender {
+    
+    if (!_menuView.superview) {
+        [_menuView showInView:self.view];
+    }
+}
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
