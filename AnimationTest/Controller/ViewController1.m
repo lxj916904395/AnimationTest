@@ -16,7 +16,9 @@
  2.选中状态存在粒子发射
  */
 
-@interface ViewController1 ()
+@interface ViewController1 (){
+   
+}
 
 @property (weak, nonatomic) IBOutlet UIButton *likeBtn;
 @property(strong ,nonatomic) CAEmitterLayer *emitterLayer;//粒子发射层
@@ -28,11 +30,40 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    [self _initUI];
+    [self explosion];
+//    [self _initEmitterLayer];
 }
 
-#pragma mark ***************** ui
-- (void)_initUI{
+//添加爆炸效果
+- (void)explosion{
+    _emitterLayer = [CAEmitterLayer layer];
+    CAEmitterCell *cell = [[CAEmitterCell alloc] init];
+    cell.name = @"explosionCell";
+    cell.lifetime = .7;
+    cell.birthRate = 4000;
+    cell.velocity = 50;//中间值
+    cell.velocityRange = 15;//(50+-15)
+    cell.scale = .03;
+    cell.scaleRange = .02;
+    cell.contents = (id)[UIImage imageNamed:@"sparkle"].CGImage;
+    
+    //设置粒子系统大小，位置，方向
+    _emitterLayer.name = @"explosionLayer";
+    _emitterLayer.emitterShape = kCAEmitterLayerCircle;
+    _emitterLayer.emitterMode = kCAEmitterLayerOutline;
+    _emitterLayer.emitterSize = CGSizeMake(25, 25);
+    _emitterLayer.emitterCells = @[cell];
+    _emitterLayer.renderMode = kCAEmitterLayerOldestFirst;
+    _emitterLayer.masksToBounds = NO;
+    _emitterLayer.birthRate = 0;
+    _emitterLayer.position = CGPointMake(CGRectGetWidth(_likeBtn.bounds)/2, CGRectGetHeight(_likeBtn.bounds)/2);
+    
+    [_likeBtn.layer addSublayer:_emitterLayer];
+    
+    
+}
+#pragma mark ***************** CAEmitterLayer
+- (void)_initEmitterLayer{
     _emitterLayer = [CAEmitterLayer layer];
     
     //发射的粒子
@@ -40,26 +71,30 @@
     //内容标识
     cell.name = @"firework";
     //粒子的内容
-    cell.contents = (id)[UIImage imageNamed:@"firework"].CGImage;
+    cell.contents = (id)[UIImage imageNamed:@"sparkle"].CGImage;
     //出生率，ji
-    cell.birthRate = 400;
+    cell.birthRate = 4000;
     
     //粒子存在时间
-    cell.lifetime = 0.4;
+    cell.lifetime = 0.7;
     //粒子存在时间波动范围，
     // >0,粒子存活的总时间 = cell.lifetime + cell.lifetimeRange
     // <0,粒子存活的总时间 = cell.lifetime - cell.lifetimeRange
-    cell.lifetimeRange = .3;
+//    cell.lifetimeRange = .3;
 
     //发射速度
     cell.velocity = 50;
     cell.velocityRange = 15;
     
-    cell.alphaSpeed = -0.4;
+//    cell.alphaSpeed = -0.4;
+    cell.scale = .03;
+    cell.scaleRange = .02;
     
-    cell.emissionRange = M_PI * 2.0;
+//    cell.emissionRange = M_PI * 2.0;
     
     
+    _emitterLayer.masksToBounds = NO;
+
     //总的出生率 = cell.birthRate*_emitterLayer.birthRate
     _emitterLayer.birthRate = 0;
     
@@ -70,16 +105,16 @@
     _emitterLayer.renderMode = kCAEmitterLayerOldestFirst;
     
     //发射模式
-//    _emitterLayer.emitterMode = kCAEmitterLayerOutline;
+    _emitterLayer.emitterMode = kCAEmitterLayerOutline;
 
     //发射源形状
     _emitterLayer.emitterShape = kCAEmitterLayerCircle;
     
-    _emitterLayer.emitterPosition  = CGPointMake(CGRectGetWidth(self.likeBtn.bounds)/2, CGRectGetHeight(self.likeBtn.bounds)/2);
+    _emitterLayer.position  = CGPointMake(CGRectGetWidth(self.likeBtn.bounds)/2, CGRectGetHeight(self.likeBtn.bounds)/2);
     
     //发射源大小
-    _emitterLayer.emitterSize = CGSizeMake(60, 60);
-    
+    _emitterLayer.emitterSize = CGSizeMake(25, 25);
+
     
     [self.likeBtn.layer addSublayer:_emitterLayer];
 }
