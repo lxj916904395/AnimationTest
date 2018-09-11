@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		4D493387213FA1BA00DB0F42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D493386213FA1BA00DB0F42 /* AppDelegate.m */; };
-		4D49338D213FA1BA00DB0F42 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D49338B213FA1BA00DB0F42 /* Main.storyboard */; };
 		4D49338F213FA1BC00DB0F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D49338E213FA1BC00DB0F42 /* Assets.xcassets */; };
 		4D493392213FA1BC00DB0F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D493390213FA1BC00DB0F42 /* LaunchScreen.storyboard */; };
 		4D493395213FA1BC00DB0F42 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D493394213FA1BC00DB0F42 /* main.m */; };
@@ -19,6 +18,15 @@
 		4D4933BE213FDE2300DB0F42 /* view0.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4933BB213FDE2200DB0F42 /* view0.png */; };
 		4D4933BF213FDE2300DB0F42 /* view1.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4933BC213FDE2200DB0F42 /* view1.png */; };
 		4D4933C0213FDE2300DB0F42 /* view2.png in Resources */ = {isa = PBXBuildFile; fileRef = 4D4933BD213FDE2200DB0F42 /* view2.png */; };
+		4D524B3021475556003563D6 /* Customtrans1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B2E21475556003563D6 /* Customtrans1ViewController.m */; };
+		4D524B3121475556003563D6 /* Customtrans1ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D524B2F21475556003563D6 /* Customtrans1ViewController.xib */; };
+		4D524B3821475599003563D6 /* Customtrans2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B3621475599003563D6 /* Customtrans2ViewController.m */; };
+		4D524B3921475599003563D6 /* Customtrans2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D524B3721475599003563D6 /* Customtrans2ViewController.xib */; };
+		4D524B3C2147584C003563D6 /* CustomTranst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B3B2147584C003563D6 /* CustomTranst.m */; };
+		4D524B3F21476025003563D6 /* DNCircleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B3D21476025003563D6 /* DNCircleTransition.m */; };
+		4D524B46214767A2003563D6 /* CustomTranstType2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B45214767A2003563D6 /* CustomTranstType2.m */; };
+		4D524B4F21476CA4003563D6 /* CustomtransType2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B4D21476CA4003563D6 /* CustomtransType2ViewController.m */; };
+		4D524B5021476CA4003563D6 /* CustomtransType2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D524B4E21476CA4003563D6 /* CustomtransType2ViewController.xib */; };
 		4DF936D821420D8400485C01 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF936D621420D8400485C01 /* TestViewController.m */; };
 		4DF936D921420D8400485C01 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF936D721420D8400485C01 /* TestViewController.xib */; };
 		4DF936E321420F7500485C01 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF936E121420F7500485C01 /* ViewController1.m */; };
@@ -49,7 +57,6 @@
 		4D493382213FA1BA00DB0F42 /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D493385213FA1BA00DB0F42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D493386213FA1BA00DB0F42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		4D49338C213FA1BA00DB0F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4D49338E213FA1BC00DB0F42 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4D493391213FA1BC00DB0F42 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4D493393213FA1BC00DB0F42 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -65,6 +72,21 @@
 		4D4933BB213FDE2200DB0F42 /* view0.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view0.png; sourceTree = "<group>"; };
 		4D4933BC213FDE2200DB0F42 /* view1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view1.png; sourceTree = "<group>"; };
 		4D4933BD213FDE2200DB0F42 /* view2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = view2.png; sourceTree = "<group>"; };
+		4D524B2D21475556003563D6 /* Customtrans1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customtrans1ViewController.h; sourceTree = "<group>"; };
+		4D524B2E21475556003563D6 /* Customtrans1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Customtrans1ViewController.m; sourceTree = "<group>"; };
+		4D524B2F21475556003563D6 /* Customtrans1ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Customtrans1ViewController.xib; sourceTree = "<group>"; };
+		4D524B3521475599003563D6 /* Customtrans2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Customtrans2ViewController.h; sourceTree = "<group>"; };
+		4D524B3621475599003563D6 /* Customtrans2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Customtrans2ViewController.m; sourceTree = "<group>"; };
+		4D524B3721475599003563D6 /* Customtrans2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Customtrans2ViewController.xib; sourceTree = "<group>"; };
+		4D524B3A2147584C003563D6 /* CustomTranst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTranst.h; sourceTree = "<group>"; };
+		4D524B3B2147584C003563D6 /* CustomTranst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTranst.m; sourceTree = "<group>"; };
+		4D524B3D21476025003563D6 /* DNCircleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCircleTransition.m; sourceTree = "<group>"; };
+		4D524B3E21476025003563D6 /* DNCircleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCircleTransition.h; sourceTree = "<group>"; };
+		4D524B44214767A2003563D6 /* CustomTranstType2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTranstType2.h; sourceTree = "<group>"; };
+		4D524B45214767A2003563D6 /* CustomTranstType2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTranstType2.m; sourceTree = "<group>"; };
+		4D524B4C21476CA4003563D6 /* CustomtransType2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomtransType2ViewController.h; sourceTree = "<group>"; };
+		4D524B4D21476CA4003563D6 /* CustomtransType2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomtransType2ViewController.m; sourceTree = "<group>"; };
+		4D524B4E21476CA4003563D6 /* CustomtransType2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomtransType2ViewController.xib; sourceTree = "<group>"; };
 		4DF936D521420D8400485C01 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		4DF936D621420D8400485C01 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		4DF936D721420D8400485C01 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -134,7 +156,6 @@
 				4D4933B8213FCD8D00DB0F42 /* icon支付宝.png */,
 				4D493385213FA1BA00DB0F42 /* AppDelegate.h */,
 				4D493386213FA1BA00DB0F42 /* AppDelegate.m */,
-				4D49338B213FA1BA00DB0F42 /* Main.storyboard */,
 				4D49338E213FA1BC00DB0F42 /* Assets.xcassets */,
 				4D493390213FA1BC00DB0F42 /* LaunchScreen.storyboard */,
 				4D493393213FA1BC00DB0F42 /* Info.plist */,
@@ -161,9 +182,40 @@
 			path = AnimationTestUITests;
 			sourceTree = "<group>";
 		};
+		4D524B2C214754F6003563D6 /* Custom1 */ = {
+			isa = PBXGroup;
+			children = (
+				4D524B3E21476025003563D6 /* DNCircleTransition.h */,
+				4D524B3D21476025003563D6 /* DNCircleTransition.m */,
+				4D524B2D21475556003563D6 /* Customtrans1ViewController.h */,
+				4D524B2E21475556003563D6 /* Customtrans1ViewController.m */,
+				4D524B2F21475556003563D6 /* Customtrans1ViewController.xib */,
+				4D524B3521475599003563D6 /* Customtrans2ViewController.h */,
+				4D524B3621475599003563D6 /* Customtrans2ViewController.m */,
+				4D524B3721475599003563D6 /* Customtrans2ViewController.xib */,
+				4D524B3A2147584C003563D6 /* CustomTranst.h */,
+				4D524B3B2147584C003563D6 /* CustomTranst.m */,
+			);
+			path = Custom1;
+			sourceTree = "<group>";
+		};
+		4D524B4021476701003563D6 /* Custom2 */ = {
+			isa = PBXGroup;
+			children = (
+				4D524B44214767A2003563D6 /* CustomTranstType2.h */,
+				4D524B45214767A2003563D6 /* CustomTranstType2.m */,
+				4D524B4C21476CA4003563D6 /* CustomtransType2ViewController.h */,
+				4D524B4D21476CA4003563D6 /* CustomtransType2ViewController.m */,
+				4D524B4E21476CA4003563D6 /* CustomtransType2ViewController.xib */,
+			);
+			path = Custom2;
+			sourceTree = "<group>";
+		};
 		4DF936C821420AA800485C01 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4D524B4021476701003563D6 /* Custom2 */,
+				4D524B2C214754F6003563D6 /* Custom1 */,
 				4DF936EA21423CB200485C01 /* View */,
 				4DF936D521420D8400485C01 /* TestViewController.h */,
 				4DF936D621420D8400485C01 /* TestViewController.m */,
@@ -293,13 +345,15 @@
 				4D4933C0213FDE2300DB0F42 /* view2.png in Resources */,
 				4D4933BE213FDE2300DB0F42 /* view0.png in Resources */,
 				4D493392213FA1BC00DB0F42 /* LaunchScreen.storyboard in Resources */,
+				4D524B3121475556003563D6 /* Customtrans1ViewController.xib in Resources */,
 				4D49338F213FA1BC00DB0F42 /* Assets.xcassets in Resources */,
 				4DF936D921420D8400485C01 /* TestViewController.xib in Resources */,
 				4DF936E921420FF600485C01 /* ViewController2.xib in Resources */,
 				4DF936E421420F7500485C01 /* ViewController1.xib in Resources */,
 				4D4933BF213FDE2300DB0F42 /* view1.png in Resources */,
-				4D49338D213FA1BA00DB0F42 /* Main.storyboard in Resources */,
+				4D524B5021476CA4003563D6 /* CustomtransType2ViewController.xib in Resources */,
 				4D4933BA213FCD8D00DB0F42 /* icon支付宝.png in Resources */,
+				4D524B3921475599003563D6 /* Customtrans2ViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -324,11 +378,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D524B3C2147584C003563D6 /* CustomTranst.m in Sources */,
+				4D524B46214767A2003563D6 /* CustomTranstType2.m in Sources */,
 				4D493395213FA1BC00DB0F42 /* main.m in Sources */,
+				4D524B3021475556003563D6 /* Customtrans1ViewController.m in Sources */,
 				4DF936E321420F7500485C01 /* ViewController1.m in Sources */,
+				4D524B3821475599003563D6 /* Customtrans2ViewController.m in Sources */,
 				4DF936D821420D8400485C01 /* TestViewController.m in Sources */,
+				4D524B3F21476025003563D6 /* DNCircleTransition.m in Sources */,
 				4D493387213FA1BA00DB0F42 /* AppDelegate.m in Sources */,
 				4DF936E821420FF600485C01 /* ViewController2.m in Sources */,
+				4D524B4F21476CA4003563D6 /* CustomtransType2ViewController.m in Sources */,
 				4DF936ED21423CC100485C01 /* MenuView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -365,14 +425,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4D49338B213FA1BA00DB0F42 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				4D49338C213FA1BA00DB0F42 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		4D493390213FA1BC00DB0F42 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

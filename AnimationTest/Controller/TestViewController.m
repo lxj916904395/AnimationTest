@@ -7,6 +7,11 @@
 
 #import "TestViewController.h"
 #import "ViewController1.h"
+#import "Customtrans1ViewController.h"
+#import "CustomtransType2ViewController.h"
+
+#import "CustomTranstType2.h"
+
 
 /**
  动画创建三步骤
@@ -17,7 +22,7 @@
 
 #define angleToRorate(angle) ((angle)/180.0 * M_PI)
 
-@interface TestViewController ()<CAAnimationDelegate>{
+@interface TestViewController ()<CAAnimationDelegate,UINavigationControllerDelegate>{
     NSArray*_images;
     NSInteger _index;
 }
@@ -35,6 +40,7 @@
     [super viewDidLoad];
     
     _images = @[@"view0",@"view1",@"view2"];
+   
 }
 
 //基础动画
@@ -209,6 +215,39 @@
     [self.navigationController.view.layer  addAnimation:anim forKey:nil];
     ViewController1 *vc = [ViewController1 new];
     [self.navigationController pushViewController:vc animated:NO];
+}
+
+- (IBAction)customerTrans:(id)sender {
+    //自定义转场动画1
+    Customtrans1ViewController *customer = [Customtrans1ViewController new];
+    [self.navigationController pushViewController:customer animated:YES];
+}
+
+
+- (IBAction)customerTrans2:(id)sender {
+    //自定义转场动画2
+    CustomtransType2ViewController *customer = [CustomtransType2ViewController new];
+    [self.navigationController pushViewController:customer animated:YES];
+}
+
+
+
+- (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
+                                            animationControllerForOperation:(UINavigationControllerOperation)operation
+                                                         fromViewController:(UIViewController *)fromVC
+                                                           toViewController:(UIViewController *)toVC{
+    if ([toVC isKindOfClass:CustomtransType2ViewController.class] && operation == UINavigationControllerOperationPush) {
+        CustomTranstType2 *custom = [CustomTranstType2 new];
+        custom.isPush = YES;
+        return custom;
+    }else{
+        return nil;
+    }
+}
+
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+     self.navigationController.delegate = self;
 }
 
 - (void)didReceiveMemoryWarning {
