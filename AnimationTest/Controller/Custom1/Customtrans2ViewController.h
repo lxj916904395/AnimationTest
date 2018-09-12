@@ -8,6 +8,6 @@
 #import <UIKit/UIKit.h>
 
 @interface Customtrans2ViewController : UIViewController
-@property (weak, nonatomic) IBOutlet UIButton *actionBtn;
+@property(assign ,nonatomic) CGPoint clickPoint;
 
 @end

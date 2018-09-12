@@ -9,7 +9,6 @@
 
 #import "Customtrans2ViewController.h"
 #import "CustomTranst.h"
-#import "DNCircleTransition.h"
 
 //实现navigation 协议  UINavigationControllerDelegate
 @interface Customtrans1ViewController ()<UINavigationControllerDelegate>
@@ -20,8 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.actionBtn.layer.masksToBounds = YES;
-    self.actionBtn.layer.cornerRadius = 40;
+   
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -31,9 +29,6 @@
     [self.navigationController popViewControllerAnimated:YES];
 }
 
-- (IBAction)jumpNext:(id)sender {
-    [self.navigationController pushViewController:[Customtrans2ViewController new] animated:YES];
-}
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController animationControllerForOperation:(UINavigationControllerOperation)operation
     fromViewController:(UIViewController *)fromVC toViewController:(UIViewController *)toVC {
@@ -46,6 +41,11 @@
     }else{
         return nil;
     }
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.clickPoint =  [[touches anyObject] locationInView:self.view];
+    [self.navigationController pushViewController:[Customtrans2ViewController new] animated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

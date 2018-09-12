@@ -9,8 +9,11 @@
 #import "ViewController1.h"
 #import "Customtrans1ViewController.h"
 #import "CustomtransType2ViewController.h"
+#import "DynamicViewController.h"
+#import "TodayTopViewController.h"
 
 #import "CustomTranstType2.h"
+#import "TodayTopTransition.h"
 
 
 /**
@@ -236,13 +239,24 @@
                                             animationControllerForOperation:(UINavigationControllerOperation)operation
                                                          fromViewController:(UIViewController *)fromVC
                                                            toViewController:(UIViewController *)toVC{
-    if ([toVC isKindOfClass:CustomtransType2ViewController.class] && operation == UINavigationControllerOperationPush) {
-        CustomTranstType2 *custom = [CustomTranstType2 new];
-        custom.isPush = YES;
-        return custom;
-    }else{
-        return nil;
+    if ( operation == UINavigationControllerOperationPush) {
+        if ([toVC isKindOfClass:CustomtransType2ViewController.class] ) {
+            CustomTranstType2 *custom = [CustomTranstType2 new];
+            custom.isPush = YES;
+            return custom;
+        }else if ([toVC isKindOfClass:TodayTopViewController.class]){
+            return [TodayTopTransition new];
+        }
     }
+    return nil;
+}
+
+- (IBAction)dynamic:(id)sender {
+    [self.navigationController pushViewController:[DynamicViewController new] animated:YES];
+}
+
+- (IBAction)todayTop:(id)sender {
+    [self.navigationController pushViewController:[TodayTopViewController new] animated:YES];
 }
 
 - (void)viewWillAppear:(BOOL)animated{

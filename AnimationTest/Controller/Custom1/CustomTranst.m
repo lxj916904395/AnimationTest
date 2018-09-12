@@ -33,34 +33,54 @@
     Customtrans1ViewController *VC1;
     Customtrans2ViewController *VC2;
     
-    //中心点所在控件
-    UIButton *btn;
+    //动画开始点
+    CGPoint point;
 
     if (_isPush) {
         VC1 = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
         VC2 = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-        btn = VC1.actionBtn;
+        point = VC1.clickPoint;
     }else{
         VC2 = [transitionContext viewControllerForKey:UITransitionContextFromViewControllerKey];
         VC1 = [transitionContext viewControllerForKey:UITransitionContextToViewControllerKey];
-        btn = VC2.actionBtn;
+        point = VC2.clickPoint;
     }
     
     
     [containerView addSubview:VC1.view];
     [containerView addSubview:VC2.view];
+    
 
+    //构造以点击处为中心的小圆
+    CGRect rect = CGRectMake(point.x-5, point.y-5, 10, 10);
     
     //小圆
-    UIBezierPath *smallPath = [UIBezierPath bezierPathWithOvalInRect:btn.frame];
+    UIBezierPath *smallPath = [UIBezierPath bezierPathWithOvalInRect:rect];
     
     
     //获取动画中心点
-    CGPoint centP = btn.center;
+    CGPoint centP = point;
     
-    //获取动画大圆半径(只考虑中心点在第四象限)
-    CGFloat radius = sqrtf(centP.x*centP.x+centP.y*centP.y);
+    CGFloat halfWidth = CGRectGetWidth(VC2.view.frame)/2;
+    CGFloat halfHeight = CGRectGetHeight(VC2.view.frame)/2;
     
+    //获取动画大圆半径
+    CGFloat radius;
+    
+    if (CGRectContainsPoint(CGRectMake(halfWidth, 0, halfWidth, halfHeight), centP)) {
+         //第一象限
+        radius = sqrtf(centP.x*centP.x+(2*halfHeight-centP.y)*(2*halfHeight-centP.y));
+    }else if (CGRectContainsPoint(CGRectMake(0, 0, halfWidth, halfHeight),point)){
+         //第二象限
+        radius = sqrtf((2*halfWidth-centP.x)*(2*halfWidth-centP.x)+(2*halfHeight-centP.y)*(2*halfHeight-centP.y));
+
+    }else if (CGRectContainsPoint(CGRectMake(0, halfHeight, halfWidth, halfHeight), centP)){
+        //第三象限
+        radius = sqrtf((2*halfWidth-centP.x)*(2*halfWidth-centP.x)+centP.y*centP.y);
+    }else{
+        //第四象限
+        radius = sqrtf(centP.x*centP.x+centP.y*centP.y);
+    }
     
     /**
      所需大圆路径

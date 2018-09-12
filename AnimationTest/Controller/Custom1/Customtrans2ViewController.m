@@ -16,10 +16,6 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
-    
-    self.actionBtn.layer.masksToBounds = YES;
-    self.actionBtn.layer.cornerRadius = 40;
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -27,10 +23,6 @@
     self.navigationController.delegate = self;
 }
 
-- (IBAction)back:(id)sender {
-    [self.navigationController popViewControllerAnimated:YES];
-
-}
 
 - (nullable id <UIViewControllerAnimatedTransitioning>)navigationController:(UINavigationController *)navigationController
                                             animationControllerForOperation:(UINavigationControllerOperation)operation
@@ -45,6 +37,11 @@
     }else{
         return nil;
     }
+}
+
+- (void)touchesEnded:(NSSet<UITouch *> *)touches withEvent:(UIEvent *)event{
+    self.clickPoint =  [[touches anyObject] locationInView:self.view];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 - (void)didReceiveMemoryWarning {

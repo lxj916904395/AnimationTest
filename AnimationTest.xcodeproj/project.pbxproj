@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4CCC7CCBF1CD66BC06AD329F /* libPods-AnimationTest.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 09D52A23649E0FECF257CEFD /* libPods-AnimationTest.a */; };
 		4D493387213FA1BA00DB0F42 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D493386213FA1BA00DB0F42 /* AppDelegate.m */; };
 		4D49338F213FA1BC00DB0F42 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4D49338E213FA1BC00DB0F42 /* Assets.xcassets */; };
 		4D493392213FA1BC00DB0F42 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4D493390213FA1BC00DB0F42 /* LaunchScreen.storyboard */; };
@@ -23,10 +24,14 @@
 		4D524B3821475599003563D6 /* Customtrans2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B3621475599003563D6 /* Customtrans2ViewController.m */; };
 		4D524B3921475599003563D6 /* Customtrans2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D524B3721475599003563D6 /* Customtrans2ViewController.xib */; };
 		4D524B3C2147584C003563D6 /* CustomTranst.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B3B2147584C003563D6 /* CustomTranst.m */; };
-		4D524B3F21476025003563D6 /* DNCircleTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B3D21476025003563D6 /* DNCircleTransition.m */; };
 		4D524B46214767A2003563D6 /* CustomTranstType2.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B45214767A2003563D6 /* CustomTranstType2.m */; };
 		4D524B4F21476CA4003563D6 /* CustomtransType2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D524B4D21476CA4003563D6 /* CustomtransType2ViewController.m */; };
 		4D524B5021476CA4003563D6 /* CustomtransType2ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D524B4E21476CA4003563D6 /* CustomtransType2ViewController.xib */; };
+		4D54611C2148ACD300DC2E19 /* 11536717190_.pic.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 4D54611B2148ACD300DC2E19 /* 11536717190_.pic.jpg */; };
+		4D5461242148F72D00DC2E19 /* DynamicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5461222148F72D00DC2E19 /* DynamicViewController.m */; };
+		4D5461252148F72D00DC2E19 /* DynamicViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4D5461232148F72D00DC2E19 /* DynamicViewController.xib */; };
+		4D5461282149144A00DC2E19 /* TodayTopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D5461272149144A00DC2E19 /* TodayTopViewController.m */; };
+		4D54612C2149149C00DC2E19 /* TodayTopTransition.m in Sources */ = {isa = PBXBuildFile; fileRef = 4D54612B2149149C00DC2E19 /* TodayTopTransition.m */; };
 		4DF936D821420D8400485C01 /* TestViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF936D621420D8400485C01 /* TestViewController.m */; };
 		4DF936D921420D8400485C01 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4DF936D721420D8400485C01 /* TestViewController.xib */; };
 		4DF936E321420F7500485C01 /* ViewController1.m in Sources */ = {isa = PBXBuildFile; fileRef = 4DF936E121420F7500485C01 /* ViewController1.m */; };
@@ -54,6 +59,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09D52A23649E0FECF257CEFD /* libPods-AnimationTest.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-AnimationTest.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14AB0614288F8C14B71F6E3D /* Pods-AnimationTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.release.xcconfig"; sourceTree = "<group>"; };
 		4D493382213FA1BA00DB0F42 /* AnimationTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimationTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4D493385213FA1BA00DB0F42 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		4D493386213FA1BA00DB0F42 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -80,13 +87,19 @@
 		4D524B3721475599003563D6 /* Customtrans2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = Customtrans2ViewController.xib; sourceTree = "<group>"; };
 		4D524B3A2147584C003563D6 /* CustomTranst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTranst.h; sourceTree = "<group>"; };
 		4D524B3B2147584C003563D6 /* CustomTranst.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTranst.m; sourceTree = "<group>"; };
-		4D524B3D21476025003563D6 /* DNCircleTransition.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DNCircleTransition.m; sourceTree = "<group>"; };
-		4D524B3E21476025003563D6 /* DNCircleTransition.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DNCircleTransition.h; sourceTree = "<group>"; };
 		4D524B44214767A2003563D6 /* CustomTranstType2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomTranstType2.h; sourceTree = "<group>"; };
 		4D524B45214767A2003563D6 /* CustomTranstType2.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomTranstType2.m; sourceTree = "<group>"; };
 		4D524B4C21476CA4003563D6 /* CustomtransType2ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CustomtransType2ViewController.h; sourceTree = "<group>"; };
 		4D524B4D21476CA4003563D6 /* CustomtransType2ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CustomtransType2ViewController.m; sourceTree = "<group>"; };
 		4D524B4E21476CA4003563D6 /* CustomtransType2ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomtransType2ViewController.xib; sourceTree = "<group>"; };
+		4D54611B2148ACD300DC2E19 /* 11536717190_.pic.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 11536717190_.pic.jpg; sourceTree = "<group>"; };
+		4D5461212148F72D00DC2E19 /* DynamicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DynamicViewController.h; sourceTree = "<group>"; };
+		4D5461222148F72D00DC2E19 /* DynamicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicViewController.m; sourceTree = "<group>"; };
+		4D5461232148F72D00DC2E19 /* DynamicViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicViewController.xib; sourceTree = "<group>"; };
+		4D5461262149144A00DC2E19 /* TodayTopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayTopViewController.h; sourceTree = "<group>"; };
+		4D5461272149144A00DC2E19 /* TodayTopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayTopViewController.m; sourceTree = "<group>"; };
+		4D54612A2149149C00DC2E19 /* TodayTopTransition.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayTopTransition.h; sourceTree = "<group>"; };
+		4D54612B2149149C00DC2E19 /* TodayTopTransition.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayTopTransition.m; sourceTree = "<group>"; };
 		4DF936D521420D8400485C01 /* TestViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestViewController.h; sourceTree = "<group>"; };
 		4DF936D621420D8400485C01 /* TestViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TestViewController.m; sourceTree = "<group>"; };
 		4DF936D721420D8400485C01 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
@@ -98,6 +111,7 @@
 		4DF936E721420FF600485C01 /* ViewController2.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController2.xib; sourceTree = "<group>"; };
 		4DF936EB21423CC100485C01 /* MenuView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MenuView.h; sourceTree = "<group>"; };
 		4DF936EC21423CC100485C01 /* MenuView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MenuView.m; sourceTree = "<group>"; };
+		D9136BE32539D3DAA9A51EA4 /* Pods-AnimationTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AnimationTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AnimationTest/Pods-AnimationTest.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4CCC7CCBF1CD66BC06AD329F /* libPods-AnimationTest.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +140,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1886505457C00A37590CB217 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				09D52A23649E0FECF257CEFD /* libPods-AnimationTest.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		4D493379213FA1BA00DB0F42 = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +155,8 @@
 				4D49339D213FA1BC00DB0F42 /* AnimationTestTests */,
 				4D4933A8213FA1BD00DB0F42 /* AnimationTestUITests */,
 				4D493383213FA1BA00DB0F42 /* Products */,
+				613241DA802CD8B75787B026 /* Pods */,
+				1886505457C00A37590CB217 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -185,8 +210,6 @@
 		4D524B2C214754F6003563D6 /* Custom1 */ = {
 			isa = PBXGroup;
 			children = (
-				4D524B3E21476025003563D6 /* DNCircleTransition.h */,
-				4D524B3D21476025003563D6 /* DNCircleTransition.m */,
 				4D524B2D21475556003563D6 /* Customtrans1ViewController.h */,
 				4D524B2E21475556003563D6 /* Customtrans1ViewController.m */,
 				4D524B2F21475556003563D6 /* Customtrans1ViewController.xib */,
@@ -211,9 +234,30 @@
 			path = Custom2;
 			sourceTree = "<group>";
 		};
+		4D54611D2148F69500DC2E19 /* Dynamic */ = {
+			isa = PBXGroup;
+			children = (
+				4D5461212148F72D00DC2E19 /* DynamicViewController.h */,
+				4D5461222148F72D00DC2E19 /* DynamicViewController.m */,
+				4D5461232148F72D00DC2E19 /* DynamicViewController.xib */,
+			);
+			path = Dynamic;
+			sourceTree = "<group>";
+		};
+		4D5461292149147100DC2E19 /* Trans */ = {
+			isa = PBXGroup;
+			children = (
+				4D54612A2149149C00DC2E19 /* TodayTopTransition.h */,
+				4D54612B2149149C00DC2E19 /* TodayTopTransition.m */,
+			);
+			path = Trans;
+			sourceTree = "<group>";
+		};
 		4DF936C821420AA800485C01 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				4D5461292149147100DC2E19 /* Trans */,
+				4D54611D2148F69500DC2E19 /* Dynamic */,
 				4D524B4021476701003563D6 /* Custom2 */,
 				4D524B2C214754F6003563D6 /* Custom1 */,
 				4DF936EA21423CB200485C01 /* View */,
@@ -226,6 +270,9 @@
 				4DF936E521420FF600485C01 /* ViewController2.h */,
 				4DF936E621420FF600485C01 /* ViewController2.m */,
 				4DF936E721420FF600485C01 /* ViewController2.xib */,
+				4D54611B2148ACD300DC2E19 /* 11536717190_.pic.jpg */,
+				4D5461262149144A00DC2E19 /* TodayTopViewController.h */,
+				4D5461272149144A00DC2E19 /* TodayTopViewController.m */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -239,6 +286,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		613241DA802CD8B75787B026 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D9136BE32539D3DAA9A51EA4 /* Pods-AnimationTest.debug.xcconfig */,
+				14AB0614288F8C14B71F6E3D /* Pods-AnimationTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,6 +302,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 4D4933AE213FA1BD00DB0F42 /* Build configuration list for PBXNativeTarget "AnimationTest" */;
 			buildPhases = (
+				BEF97AEBEB79805BC734CC38 /* [CP] Check Pods Manifest.lock */,
 				4D49337E213FA1BA00DB0F42 /* Sources */,
 				4D49337F213FA1BA00DB0F42 /* Frameworks */,
 				4D493380213FA1BA00DB0F42 /* Resources */,
@@ -348,8 +405,10 @@
 				4D524B3121475556003563D6 /* Customtrans1ViewController.xib in Resources */,
 				4D49338F213FA1BC00DB0F42 /* Assets.xcassets in Resources */,
 				4DF936D921420D8400485C01 /* TestViewController.xib in Resources */,
+				4D5461252148F72D00DC2E19 /* DynamicViewController.xib in Resources */,
 				4DF936E921420FF600485C01 /* ViewController2.xib in Resources */,
 				4DF936E421420F7500485C01 /* ViewController1.xib in Resources */,
+				4D54611C2148ACD300DC2E19 /* 11536717190_.pic.jpg in Resources */,
 				4D4933BF213FDE2300DB0F42 /* view1.png in Resources */,
 				4D524B5021476CA4003563D6 /* CustomtransType2ViewController.xib in Resources */,
 				4D4933BA213FCD8D00DB0F42 /* icon支付宝.png in Resources */,
@@ -373,6 +432,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		BEF97AEBEB79805BC734CC38 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AnimationTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		4D49337E213FA1BA00DB0F42 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -380,12 +460,14 @@
 			files = (
 				4D524B3C2147584C003563D6 /* CustomTranst.m in Sources */,
 				4D524B46214767A2003563D6 /* CustomTranstType2.m in Sources */,
+				4D5461282149144A00DC2E19 /* TodayTopViewController.m in Sources */,
 				4D493395213FA1BC00DB0F42 /* main.m in Sources */,
 				4D524B3021475556003563D6 /* Customtrans1ViewController.m in Sources */,
 				4DF936E321420F7500485C01 /* ViewController1.m in Sources */,
 				4D524B3821475599003563D6 /* Customtrans2ViewController.m in Sources */,
+				4D5461242148F72D00DC2E19 /* DynamicViewController.m in Sources */,
+				4D54612C2149149C00DC2E19 /* TodayTopTransition.m in Sources */,
 				4DF936D821420D8400485C01 /* TestViewController.m in Sources */,
-				4D524B3F21476025003563D6 /* DNCircleTransition.m in Sources */,
 				4D493387213FA1BA00DB0F42 /* AppDelegate.m in Sources */,
 				4DF936E821420FF600485C01 /* ViewController2.m in Sources */,
 				4D524B4F21476CA4003563D6 /* CustomtransType2ViewController.m in Sources */,
@@ -548,6 +630,7 @@
 		};
 		4D4933AF213FA1BD00DB0F42 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D9136BE32539D3DAA9A51EA4 /* Pods-AnimationTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -564,6 +647,7 @@
 		};
 		4D4933B0213FA1BD00DB0F42 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14AB0614288F8C14B71F6E3D /* Pods-AnimationTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

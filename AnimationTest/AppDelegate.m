@@ -17,13 +17,11 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     self.window = [[UIWindow alloc] initWithFrame:[UIScreen mainScreen].bounds];
-    
-    
-    
+        
     TestViewController *vc = [[TestViewController alloc] initWithNibName:@"TestViewController" bundle:nil];
     UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-     [navi setNavigationBarHidden:YES animated:NO];
 
+    [navi setNavigationBarHidden:YES animated:NO];
     self.window.rootViewController = navi;
     [self.window makeKeyAndVisible];
     return YES;
